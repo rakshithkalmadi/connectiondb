@@ -3,14 +3,17 @@ $conn = mysqli_connect('localhost', 'root', '', 'projectdb') or die("Unable to c
 echo "Great Work!";
 
 
-$sql = 'SELECT id, name, ex FROM exampletbl ORDER BY id';
+$sql = 'SELECT id, name, address FROM projecttable';
 
 $result = mysqli_query($conn, $sql);
 
 $final = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 print_r($final);
+
 ?>
+
+
 <html>
     <body>
         <p>My first paragraph.</p>
