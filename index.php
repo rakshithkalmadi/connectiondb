@@ -1,8 +1,8 @@
 <?php
-$conn = mysqli_connect('localhost', 'userme', 'test1234', 'newnww') or die("Unable to connect to database");
+$conn = mysqli_connect('localhost', 'username', 'password', 'dbname') or die("Unable to connect to database");
 echo "Great Work!";
 
-$sql = 'SELECT id, name, ex FROM exampletbl ORDER BY id';
+$sql = 'SELECT id, name, ex FROM table_name ORDER BY id';
 
 $result = mysqli_query($conn, $sql);
 
